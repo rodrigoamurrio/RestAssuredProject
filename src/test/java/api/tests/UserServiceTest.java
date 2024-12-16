@@ -15,6 +15,7 @@ public class UserServiceTest {
     UserInput userInput = new UserInput();
     UserService userService = new UserService();
 
+
     @Test
     public void createUserTest() {
 

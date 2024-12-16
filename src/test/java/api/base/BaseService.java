@@ -1,5 +1,6 @@
 package api.base;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -14,7 +15,7 @@ public class BaseService {
     private final RequestSpecification requestSpecification;
 
     public BaseService() {
-        requestSpecification = RestAssured.given().baseUri(BASE_URL);
+        requestSpecification = RestAssured.given().filter(new AllureRestAssured()).baseUri(BASE_URL);
     }
 
     protected Response postRequest(Object body, String endPoint) {
