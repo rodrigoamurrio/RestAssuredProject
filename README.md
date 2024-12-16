@@ -1,6 +1,6 @@
 # Rest-Assured Project - Validation Pet Store
 
-Project using Rest-Assured with java - validation user CRUD and login user
+Project using Rest-Assured with java - validation user CRUD
 
 ## Requirements
 Verify if the following requirements are installed:
